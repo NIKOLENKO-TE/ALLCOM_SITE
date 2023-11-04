@@ -28,12 +28,16 @@ const LoginPage: React.FC = (): JSX.Element => {
 								type="password"
 							/>
 							<div className="account__login--remember__forgot mb-15 d-flex justify-content-between align-items-center">
-								<div className="account__login--remember position__relative">
+								<div
+									className="account__login--remember position__relative"
+									style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}
+								>
 									<input className="checkout__checkbox--input" id="check1" type="checkbox" />
 									<span className="checkout__checkbox--checkmark"></span>
 									<label
 										className="checkout__checkbox--label login__remember--label"
 										htmlFor="check1"
+										style={{ marginLeft: '10px' }}
 									>
 										{t('Remember me')}
 									</label>
@@ -83,8 +87,8 @@ const LoginPage: React.FC = (): JSX.Element => {
 								{t('Submit & Register')}
 							</button>
 							<div
-								className="account__login--remember position__relative"
-								style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}
+								className="account__login--remember position__relative "
+								style={{ display: 'flex', justifyContent: 'left' }}
 							>
 								<div>
 									<input className="checkout__checkbox--input" id="check2" type="checkbox" />
@@ -93,6 +97,7 @@ const LoginPage: React.FC = (): JSX.Element => {
 								<label
 									className="checkout__checkbox--label login__remember--label"
 									htmlFor="check2"
+									style={{ marginLeft: '10px' }}
 								>
 									{t('I have read and agree to the terms & conditions')}
 								</label>
