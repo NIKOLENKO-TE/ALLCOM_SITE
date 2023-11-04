@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import NotFound from './components/NotFound/NotFound';
 import Footer from './components/Footer/Footer';
+import LoginPage from './components/LoginPage/LoginPage';
 
 const locales = {
 	en: { title: 'English' },
@@ -26,7 +27,7 @@ function App(): JSX.Element {
 					</li>
 				))}
 			</ul>
-
+			<LoginPage />
 			<NotFound />
 			<Footer />
 		</div>
