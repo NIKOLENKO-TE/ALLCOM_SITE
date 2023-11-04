@@ -20,5 +20,22 @@
 		"copyright": "Copyright © 2023",
 		"title": "Allcom",
 		"reserved": ". All Rights Reserved."
+	},
+	"LoginPage": {
+		"login": "Login",
+		"header_desc": "Login if you are a returning customer.",
+		"placeholder_email": "Email Address",
+		"placeholder_password": "Password",
+		"placeholder_confirm_password": "Confirm Password",
+		"remember_me": "Remember me",
+		"forgot_your_password": "Forgot Your Password?",
+		"or": "OR",
+		"dont_have_account": "Don't Have an Account?",
+		"sign_up_now": "Sign up now",
+		"create_account": "Create an Account",
+		"register_here_text": "Register here if you are a new customer",
+		"username": "Username",
+		"submit_register": "Submit & Register",
+		"i_have_read_text": "I have read and agree to the terms & conditions"
 	}
 }
