@@ -11,20 +11,18 @@ const LoginPage: React.FC = (): JSX.Element => {
 				<div className="col">
 					<div className="account__login">
 						<div className="account__login--header mb-25">
-							<h2 className="account__login--header__title h3 mb-10">{t('Login')}</h2>
-							<p className="account__login--header__desc">
-								{t('Login if you are a returning customer.')}
-							</p>
+							<h2 className="account__login--header__title h3 mb-10">{t('login')}</h2>
+							<p className="account__login--header__desc">{t('header_desc')}</p>
 						</div>
 						<div className="account__login--inner">
 							<input
 								className="account__login--input"
-								placeholder={t('Email Address')}
+								placeholder={t('placeholder_email')}
 								type="text"
 							/>
 							<input
 								className="account__login--input"
-								placeholder={t('Password')}
+								placeholder={t('placeholder_password')}
 								type="password"
 							/>
 							<div className="account__login--remember__forgot mb-15 d-flex justify-content-between align-items-center">
@@ -39,21 +37,24 @@ const LoginPage: React.FC = (): JSX.Element => {
 										htmlFor="check1"
 										style={{ marginLeft: '10px' }}
 									>
-										{t('Remember me')}
+										{t('remember_me')}
 									</label>
 								</div>
 								<button className="account__login--forgot" type="submit">
-									{t('Forgot Your Password?')}
+									{t('forgot_your_password')}
 								</button>
 							</div>
 							<button className="account__login--btn primary__btn" type="submit">
-								{t('Login')}
+								{t('login')}
 							</button>
 							<div className="account__login--divide">
-								<span className="account__login--divide__text">OR</span>
+								<span className="account__login--divide__text text-black">{t('or')}</span>
 							</div>
 							<p className="account__login--signup__text">
-								{t("Don't Have an Account?")} <button type="submit">{t('Sign up now')}</button>
+								{t('dont_have_account')}
+								<button style={{ marginLeft: '10px' }} type="submit">
+									{t('sign_up_now')}{' '}
+								</button>
 							</p>
 						</div>
 					</div>
@@ -61,30 +62,28 @@ const LoginPage: React.FC = (): JSX.Element => {
 				<div className="col">
 					<div className="account__login register">
 						<div className="account__login--header mb-25">
-							<h2 className="account__login--header__title h3 mb-10">{t('Create an Account')}</h2>
-							<p className="account__login--header__desc">
-								{t('Register here if you are a new customer')}
-							</p>
+							<h2 className="account__login--header__title h3 mb-10">{t('create_account')}</h2>
+							<p className="account__login--header__desc">{t('register_here_text')}</p>
 						</div>
 						<div className="account__login--inner">
-							<input className="account__login--input" placeholder={t('Username')} type="text" />
+							<input className="account__login--input" placeholder={t('username')} type="text" />
 							<input
 								className="account__login--input"
-								placeholder={t('Email Address')}
+								placeholder={t('placeholder_email')}
 								type="text"
 							/>
 							<input
 								className="account__login--input"
-								placeholder={t('Password')}
+								placeholder={t('placeholder_password')}
 								type="password"
 							/>
 							<input
 								className="account__login--input"
-								placeholder={t('Confirm Password')}
+								placeholder={t('placeholder_confirm_password')}
 								type="password"
 							/>
 							<button className="account__login--btn primary__btn mb-10" type="submit">
-								{t('Submit & Register')}
+								{t('submit_register')}
 							</button>
 							<div
 								className="account__login--remember position__relative "
@@ -99,7 +98,7 @@ const LoginPage: React.FC = (): JSX.Element => {
 									htmlFor="check2"
 									style={{ marginLeft: '10px' }}
 								>
-									{t('I have read and agree to the terms & conditions')}
+									{t('i_have_read_text')}
 								</label>
 							</div>
 						</div>
