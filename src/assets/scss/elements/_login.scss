@@ -1,7 +1,7 @@
 /*
     24. Login page css
 */
-.account__login {
+.login__account {
 	background: var(--white-color);
 	padding: 2.5rem;
 	border-radius: 1rem;
@@ -82,7 +82,7 @@
 		}
 	}
 }
-.account__login--remember {
+.login__account--remember {
 	&__forgot {
 		@media only screen and (max-width: 575px) {
 			flex-direction: column;
@@ -105,7 +105,7 @@
 	}
 }
 
-.account__login--divide {
+.login__account--divide {
 	text-align: center;
 	position: relative;
 	padding: 1rem 0;
@@ -131,56 +131,3 @@
 	}
 }
 
-.account__social {
-	&--link {
-		height: 4.2rem;
-		line-height: 4.2rem;
-		padding: 0 2.5rem;
-		color: var(--white-color);
-		border-radius: 0.5rem;
-		font-weight: 600;
-		&.facebook {
-			background: #4867aa;
-			&:hover {
-				background: var(--secondary-color);
-				color: var(--white-color);
-			}
-		}
-		&.google {
-			background: #e94235;
-			&:hover {
-				background: var(--secondary-color);
-				color: var(--white-color);
-			}
-		}
-		&.twitter {
-			background: #55adee;
-			&:hover {
-				background: var(--secondary-color);
-				color: var(--white-color);
-			}
-		}
-		margin-right: 1rem;
-		&:last-child {
-			margin-right: 0;
-		}
-		@media only screen and (min-width: 768px) {
-			padding: 0 2rem;
-		}
-		@media only screen and (min-width: 992px) {
-			padding: 0 3.2rem;
-			margin-right: 1.2rem;
-			font-size: 1.5rem;
-		}
-		@media only screen and (min-width: 1200px) {
-			padding: 0 4.5rem;
-			margin-right: 2rem;
-		}
-		@media only screen and (max-width: 575px) {
-			height: 3.5rem;
-			line-height: 3.5rem;
-			padding: 0 1.3rem;
-			font-size: 1.4rem;
-		}
-	}
-}
